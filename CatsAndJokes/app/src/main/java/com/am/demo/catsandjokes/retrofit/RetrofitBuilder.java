@@ -13,7 +13,7 @@ import retrofit2.converter.simplexml.SimpleXmlConverterFactory;
  */
 
 public class RetrofitBuilder {
-    private static final String JOKES_URL = "https://api.icndb.com";
+    private static final String JOKES_URL = "https://api.icndb.com/";
     private static final String CATS_URL = "http://thecatapi.com/api/";
     private static RetrofitBuilder jokeInstance;
     private static RetrofitBuilder catsInstance;

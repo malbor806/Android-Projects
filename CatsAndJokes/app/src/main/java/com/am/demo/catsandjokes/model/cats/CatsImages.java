@@ -9,7 +9,7 @@ import java.util.List;
  * Created by malbor806 on 24.05.2017.
  */
 @Root(name = "images")
-class CatsImages {
+public class CatsImages {
     @ElementList(name = "image", inline = true)
     private List<Cat> imagesList;
 

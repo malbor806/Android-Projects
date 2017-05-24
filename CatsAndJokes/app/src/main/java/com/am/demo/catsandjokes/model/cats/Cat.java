@@ -7,9 +7,9 @@ import org.simpleframework.xml.Root;
  * Created by malbor806 on 24.05.2017.
  */
 
-@Root(name="image")
+@Root(name = "image")
 public class Cat {
-    @Element(name="url")
+    @Element(name = "url")
     private String url;
 
     public String getUrl() {

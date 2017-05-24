@@ -1,7 +1,7 @@
 package com.am.demo.catsandjokes.retrofit;
 
-import com.am.demo.catsandjokes.model.ChuckNorrisJokesAPI;
-import com.am.demo.catsandjokes.model.Joke;
+import com.am.demo.catsandjokes.model.jokes.ChuckNorrisJokesAPI;
+import com.am.demo.catsandjokes.model.jokes.JokeResponse;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -12,7 +12,7 @@ import retrofit2.Retrofit;
  * Created by malbor806 on 24.05.2017.
  */
 
-public class JokeController implements Callback<Joke> {
+public class JokeController implements Callback<JokeResponse> {
     private Retrofit retrofit;
     private ChuckNorrisJokesAPI chuck;
 
@@ -25,22 +25,23 @@ public class JokeController implements Callback<Joke> {
     }
 
     public void getJokes() {
-        Call<Joke> joke = chuck.getJoke();
+        Call<JokeResponse> joke = chuck.getJoke();
+        joke.enqueue(this);
     }
 
 
     @Override
-    public void onResponse(Call<Joke> call, Response<Joke> response) {
+    public void onResponse(Call<JokeResponse> call, Response<JokeResponse> response) {
         if(response.isSuccessful()) {
-            Joke joke = response.body();
-            System.out.println(joke.getJoke());
+            JokeResponse joke = response.body();
+            System.out.println(joke.getJoke().getJoke());
         } else {
             System.out.println(response.errorBody());
         }
     }
 
     @Override
-    public void onFailure(Call<Joke> call, Throwable t) {
+    public void onFailure(Call<JokeResponse> call, Throwable t) {
         t.printStackTrace();
     }
 }

@@ -1,9 +1,5 @@
 package com.am.demo.catsandjokes.model.cats;
 
-import com.am.demo.catsandjokes.model.cats.Cat;
-
-import java.util.List;
-
 import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Path;
@@ -14,5 +10,5 @@ import retrofit2.http.Path;
 
 public interface CatsGalleryAPI {
     @GET("images/get?format=xml&results_per_page={pictureNumber}")
-    Call<List<Cat>> getCatsList(@Path("pictureNumber") String pictureNumber);
+    Call<CatsResponse> getCatsResponse(@Path("pictureNumber") int pictureNumber);
 }

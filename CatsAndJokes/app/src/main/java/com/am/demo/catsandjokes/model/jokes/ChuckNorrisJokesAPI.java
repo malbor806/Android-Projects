@@ -1,4 +1,4 @@
-package com.am.demo.catsandjokes.model;
+package com.am.demo.catsandjokes.model.jokes;
 
 import retrofit2.Call;
 import retrofit2.http.GET;
@@ -8,6 +8,6 @@ import retrofit2.http.GET;
  */
 
 public interface ChuckNorrisJokesAPI {
-    @GET("http://www.api.icndb.com/jokes/random")
-    Call<Joke> getJoke();
+    @GET("jokes/random")
+    Call<JokeResponse> getJoke();
 }

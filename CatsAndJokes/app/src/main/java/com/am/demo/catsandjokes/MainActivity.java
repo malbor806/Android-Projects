@@ -6,12 +6,11 @@ import android.widget.Button;
 import android.widget.GridView;
 import android.widget.TextView;
 
-import com.am.demo.catsandjokes.model.cats.CatsGalleryAPI;
-import com.am.demo.catsandjokes.model.ChuckNorrisJokesAPI;
+import com.am.demo.catsandjokes.retrofit.CatController;
+import com.am.demo.catsandjokes.retrofit.JokeController;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import retrofit2.Retrofit;
 
 public class MainActivity extends AppCompatActivity {
     @BindView(R.id.b_getCats)
@@ -22,10 +21,8 @@ public class MainActivity extends AppCompatActivity {
     TextView showJokeTextView;
     @BindView(R.id.gv_catsList)
     GridView catGalleryGridView;
-    private Retrofit retrofit;
-    private Retrofit retrofit2;
-    private ChuckNorrisJokesAPI chuck;
-    private CatsGalleryAPI cats;
+    private JokeController jokeController;
+    private CatController catController;
 
 
     @Override
@@ -34,6 +31,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
         setListeners();
+        jokeController = new JokeController();
+        catController = new CatController();
     }
 
     private void setListeners() {
@@ -42,8 +41,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void downloadCats() {
+        catController.getCats();
     }
 
     private void downloadJoke() {
+        jokeController.getJokes();
     }
 }
