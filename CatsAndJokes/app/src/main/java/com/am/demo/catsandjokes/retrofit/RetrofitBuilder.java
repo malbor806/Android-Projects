@@ -9,16 +9,15 @@ import retrofit2.Retrofit;
 
 public class RetrofitBuilder {
     private static final String JOKES_URL = "https://api.icndb.com";
-    private static final String CATS_URL = "http://thecatapi.com";
+    private static final String CATS_URL = "http://thecatapi.com/api";
     private static RetrofitBuilder jokeInstance;
     private static RetrofitBuilder catsInstance;
-
+    private Retrofit retrofit;
 
     private RetrofitBuilder(String url) {
-        Retrofit retrofit = new Retrofit.Builder()
+        retrofit = new Retrofit.Builder()
                 .baseUrl(url)
                 .build();
-
     }
 
     public static RetrofitBuilder getInstance(String instanceName) {
@@ -44,5 +43,7 @@ public class RetrofitBuilder {
         return catsInstance;
     }
 
-
+    public Retrofit getRetrofit() {
+        return retrofit;
+    }
 }
