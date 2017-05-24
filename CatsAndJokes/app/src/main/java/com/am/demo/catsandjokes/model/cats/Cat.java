@@ -11,6 +11,10 @@ import org.simpleframework.xml.Root;
 public class Cat {
     @Element(name = "url")
     private String url;
+    @Element(name = "id")
+    private String id;
+    @Element(name = "source_url")
+    private String sourceURL;
 
     public String getUrl() {
         return url;
@@ -18,5 +22,21 @@ public class Cat {
 
     public void setUrl(String url) {
         this.url = url;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getSourceURL() {
+        return sourceURL;
+    }
+
+    public void setSourceURL(String sourceURL) {
+        this.sourceURL = sourceURL;
     }
 }

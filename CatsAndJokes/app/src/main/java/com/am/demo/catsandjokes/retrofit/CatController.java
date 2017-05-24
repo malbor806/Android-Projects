@@ -28,7 +28,7 @@ public class CatController implements Callback<CatsResponse> {
     }
 
     public void getCats() {
-        Call<CatsResponse> catsList = cats.getCatsResponse(10);
+        Call<CatsResponse> catsList = cats.getCatsResponse();
         catsList.enqueue(this);
     }
 

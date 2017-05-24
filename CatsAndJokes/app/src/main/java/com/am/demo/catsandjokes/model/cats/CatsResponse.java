@@ -9,7 +9,7 @@ import org.simpleframework.xml.Root;
 
 @Root(name = "response")
 public class CatsResponse {
-    @Element(name = "images")
+    @Element(name = "data")
     private CatsDataImages catsImages;
 
     public CatsDataImages getCatsDataImages() {
