@@ -1,20 +1,16 @@
-package com.am.demo.catsandjokes.model;
+package com.am.demo.catsandjokes.model.cats;
+
+import org.simpleframework.xml.Element;
+import org.simpleframework.xml.Root;
 
 /**
  * Created by malbor806 on 24.05.2017.
  */
 
+@Root(name="image")
 public class Cat {
-    private String id;
+    @Element(name="url")
     private String url;
-
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
 
     public String getUrl() {
         return url;

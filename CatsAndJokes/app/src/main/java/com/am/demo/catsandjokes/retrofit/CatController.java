@@ -1,7 +1,7 @@
 package com.am.demo.catsandjokes.retrofit;
 
-import com.am.demo.catsandjokes.model.Cat;
-import com.am.demo.catsandjokes.model.CatsGalleryAPI;
+import com.am.demo.catsandjokes.model.cats.Cat;
+import com.am.demo.catsandjokes.model.cats.CatsGalleryAPI;
 
 import java.util.List;
 

@@ -6,7 +6,7 @@ import android.widget.Button;
 import android.widget.GridView;
 import android.widget.TextView;
 
-import com.am.demo.catsandjokes.model.CatsGalleryAPI;
+import com.am.demo.catsandjokes.model.cats.CatsGalleryAPI;
 import com.am.demo.catsandjokes.model.ChuckNorrisJokesAPI;
 
 import butterknife.BindView;

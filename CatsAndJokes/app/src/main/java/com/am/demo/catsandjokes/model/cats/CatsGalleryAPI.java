@@ -1,4 +1,6 @@
-package com.am.demo.catsandjokes.model;
+package com.am.demo.catsandjokes.model.cats;
+
+import com.am.demo.catsandjokes.model.cats.Cat;
 
 import java.util.List;
 
