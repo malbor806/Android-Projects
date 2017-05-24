@@ -2,4 +2,5 @@
     <string name="app_name">Cats And Jokes</string>
     <string name="get_cats">GET CATS</string>
     <string name="get_joke">GET JOKE</string>
+    <string name="sweet_cat">sweet cat</string>
 </resources>

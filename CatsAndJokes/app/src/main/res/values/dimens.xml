@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_view_padding">10dp</dimen>
+    <dimen name="joke_text_size">20sp</dimen>
+    <dimen name="joke_text_view_margin_bottom">15dp</dimen>
+</resources>

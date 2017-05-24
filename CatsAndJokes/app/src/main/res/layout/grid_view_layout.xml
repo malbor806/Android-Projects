@@ -7,6 +7,13 @@
     <ImageView
         android:id="@+id/iv_picture"
         android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/sweet_cat" />
+
+    <ProgressBar
+        android:id="@+id/pb_progress"
+        style="@android:style/Widget.Holo.Light.ProgressBar"
+        android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
 </LinearLayout>

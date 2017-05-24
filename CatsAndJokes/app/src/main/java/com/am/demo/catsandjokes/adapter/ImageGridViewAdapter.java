@@ -9,9 +9,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 
 import com.am.demo.catsandjokes.R;
 import com.am.demo.catsandjokes.model.cats.Cat;
+import com.squareup.picasso.Callback;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
@@ -42,22 +44,45 @@ public class ImageGridViewAdapter extends ArrayAdapter<Cat> {
             LayoutInflater inflater = ((Activity) context).getLayoutInflater();
             row = inflater.inflate(layoutResourceId, parent, false);
 
-            holder = new ImageHolder();
-            holder.catPicture = (ImageView) row.findViewById(R.id.iv_picture);
+            holder = createHolder(row);
             row.setTag(holder);
         } else {
             holder = (ImageHolder) row.getTag();
         }
 
-        Picasso.with(context)
-                .load(data.get(position).getUrl())
-                .resize(300, 300)
-                .centerCrop()
-                .into(holder.catPicture);
+        addPicture(position, holder);
         return row;
     }
 
-    static class ImageHolder {
+    @NonNull
+    private ImageHolder createHolder(View row) {
+        ImageHolder holder;
+        holder = new ImageHolder();
+        holder.catPicture = (ImageView) row.findViewById(R.id.iv_picture);
+        holder.progressBar = (ProgressBar) row.findViewById(R.id.pb_progress);
+        return holder;
+    }
+
+    private synchronized void addPicture(int position, ImageHolder holder) {
+        Picasso.with(context)
+                .load(data.get(position).getUrl())
+                .fit()
+                .centerInside()
+                .into(holder.catPicture, new Callback() {
+                    @Override
+                    public void onSuccess() {
+                        holder.progressBar.setVisibility(View.GONE);
+                    }
+
+                    @Override
+                    public void onError() {
+
+                    }
+                });
+    }
+
+    private static class ImageHolder {
         ImageView catPicture;
+        ProgressBar progressBar;
     }
 }
