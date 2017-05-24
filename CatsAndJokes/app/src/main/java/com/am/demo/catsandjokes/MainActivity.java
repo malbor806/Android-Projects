@@ -1,12 +1,12 @@
 package com.am.demo.catsandjokes;
 
+import android.content.Context;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.LayoutInflater;
-import android.view.View;
 import android.widget.Button;
 import android.widget.GridView;
-import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -15,7 +15,6 @@ import com.am.demo.catsandjokes.model.cats.Cat;
 import com.am.demo.catsandjokes.model.jokes.Joke;
 import com.am.demo.catsandjokes.retrofit.CatController;
 import com.am.demo.catsandjokes.retrofit.JokeController;
-import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
@@ -34,7 +33,6 @@ public class MainActivity extends AppCompatActivity {
     private JokeController jokeController;
     private CatController catController;
     private ImageGridViewAdapter imageGridViewAdapter;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,8 +55,8 @@ public class MainActivity extends AppCompatActivity {
         if (cats != null) {
             imageGridViewAdapter = new ImageGridViewAdapter(this, R.layout.grid_view_layout, cats);
             catGalleryGridView.setAdapter(imageGridViewAdapter);
-        }else{
-            showErrorInformation();
+        } else {
+            showErrorInformation(getString(R.string.error_something_wrong));
         }
     }
 
@@ -66,19 +64,34 @@ public class MainActivity extends AppCompatActivity {
         if (joke != null) {
             showJokeTextView.setText(joke.getJoke());
         } else {
-            showErrorInformation();
+            showErrorInformation(getString(R.string.error_something_wrong));
         }
     }
 
-    private void showErrorInformation() {
-        Toast.makeText(this, "Ups, something goes wrong...", Toast.LENGTH_SHORT).show();
+    private void showErrorInformation(String s) {
+        Toast.makeText(this, s, Toast.LENGTH_SHORT).show();
+    }
+
+    public boolean isOnline() {
+        ConnectivityManager cm =
+                (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo netInfo = cm.getActiveNetworkInfo();
+        return netInfo != null && netInfo.isConnectedOrConnecting();
     }
 
     private void downloadCats() {
-        catController.getCats();
+        if (isOnline()) {
+            catController.getCats();
+        } else {
+            showErrorInformation(getString(R.string.error_no_internet));
+        }
     }
 
     private void downloadJoke() {
-        jokeController.getJokes();
+        if (isOnline()) {
+            jokeController.getJokes();
+        } else {
+            showErrorInformation(getString(R.string.error_no_internet));
+        }
     }
 }

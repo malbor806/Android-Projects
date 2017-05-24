@@ -4,6 +4,7 @@ package com.am.demo.catsandjokes.retrofit;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
+import okhttp3.OkHttpClient;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 import retrofit2.converter.simplexml.SimpleXmlConverterFactory;
@@ -64,6 +65,7 @@ public class RetrofitBuilder {
     private void createCatsRetrofit(String url) {
         retrofit = new Retrofit.Builder()
                 .baseUrl(url)
+                .client(new OkHttpClient())
                 .addConverterFactory(SimpleXmlConverterFactory.create())
                 .build();
     }
