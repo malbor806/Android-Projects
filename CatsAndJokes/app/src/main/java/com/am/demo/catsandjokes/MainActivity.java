@@ -2,15 +2,20 @@ package com.am.demo.catsandjokes;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.LayoutInflater;
+import android.view.View;
 import android.widget.Button;
 import android.widget.GridView;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.am.demo.catsandjokes.adapter.ImageGridViewAdapter;
 import com.am.demo.catsandjokes.model.cats.Cat;
 import com.am.demo.catsandjokes.model.jokes.Joke;
 import com.am.demo.catsandjokes.retrofit.CatController;
 import com.am.demo.catsandjokes.retrofit.JokeController;
+import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
@@ -28,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
     GridView catGalleryGridView;
     private JokeController jokeController;
     private CatController catController;
+    private ImageGridViewAdapter imageGridViewAdapter;
 
 
     @Override
@@ -48,7 +54,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void showCatsPicture(List<Cat> cats) {
-
+        if (cats != null) {
+            imageGridViewAdapter = new ImageGridViewAdapter(this, R.layout.grid_view_layout, cats);
+            catGalleryGridView.setAdapter(imageGridViewAdapter);
+        }else{
+            showErrorInformation();
+        }
     }
 
     private void showJoke(Joke joke) {
