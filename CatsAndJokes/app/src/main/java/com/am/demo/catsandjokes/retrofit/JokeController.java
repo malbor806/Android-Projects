@@ -2,6 +2,7 @@ package com.am.demo.catsandjokes.retrofit;
 
 import com.am.demo.catsandjokes.model.jokes.ChuckNorrisJokesAPI;
 import com.am.demo.catsandjokes.model.jokes.JokeResponse;
+import com.am.demo.catsandjokes.model.jokes.OnJokeResponseListener;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -13,13 +14,14 @@ import retrofit2.Retrofit;
  */
 
 public class JokeController implements Callback<JokeResponse> {
-    private Retrofit retrofit;
+    private static final String KEY_INSTANCE = "JOKES";
     private ChuckNorrisJokesAPI chuck;
+    private OnJokeResponseListener onJokeResponseListener;
 
     public JokeController() {
-        RetrofitBuilder retrofitBuilder = RetrofitBuilder.getInstance("JOKES");
+        RetrofitBuilder retrofitBuilder = RetrofitBuilder.getInstance(KEY_INSTANCE);
         if (retrofitBuilder != null) {
-            retrofit = retrofitBuilder.getRetrofit();
+            Retrofit retrofit = retrofitBuilder.getRetrofit();
             chuck = retrofit.create(ChuckNorrisJokesAPI.class);
         }
     }
@@ -29,11 +31,11 @@ public class JokeController implements Callback<JokeResponse> {
         joke.enqueue(this);
     }
 
-
     @Override
     public void onResponse(Call<JokeResponse> call, Response<JokeResponse> response) {
-        if(response.isSuccessful()) {
+        if (response.isSuccessful()) {
             JokeResponse joke = response.body();
+            onJokeResponseListener.onJokeResponse(joke.getJoke());
             System.out.println(joke.getJoke().getJoke());
         } else {
             System.out.println(response.errorBody());
@@ -43,5 +45,9 @@ public class JokeController implements Callback<JokeResponse> {
     @Override
     public void onFailure(Call<JokeResponse> call, Throwable t) {
         t.printStackTrace();
+    }
+
+    public void setOnJokeResponseListener(OnJokeResponseListener onJokeResponseListener) {
+        this.onJokeResponseListener = onJokeResponseListener;
     }
 }

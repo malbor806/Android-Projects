@@ -27,24 +27,6 @@ public class RetrofitBuilder {
         }
     }
 
-    private void createJokeRetrofit(String url) {
-        Gson gson = new GsonBuilder()
-                .setLenient()
-                .create();
-
-        retrofit = new Retrofit.Builder()
-                .baseUrl(url)
-                .addConverterFactory(GsonConverterFactory.create(gson))
-                .build();
-    }
-
-    private void createCatsRetrofit(String url) {
-        retrofit = new Retrofit.Builder()
-                .baseUrl(url)
-                .addConverterFactory(SimpleXmlConverterFactory.create())
-                .build();
-    }
-
     public static RetrofitBuilder getInstance(String instanceName) {
         if (instanceName.equals("JOKES")) {
             return getJokesInstance(JOKES_URL);
@@ -66,6 +48,24 @@ public class RetrofitBuilder {
             catsInstance = new RetrofitBuilder(url);
         }
         return catsInstance;
+    }
+
+    private void createJokeRetrofit(String url) {
+        Gson gson = new GsonBuilder()
+                .setLenient()
+                .create();
+
+        retrofit = new Retrofit.Builder()
+                .baseUrl(url)
+                .addConverterFactory(GsonConverterFactory.create(gson))
+                .build();
+    }
+
+    private void createCatsRetrofit(String url) {
+        retrofit = new Retrofit.Builder()
+                .baseUrl(url)
+                .addConverterFactory(SimpleXmlConverterFactory.create())
+                .build();
     }
 
     public Retrofit getRetrofit() {

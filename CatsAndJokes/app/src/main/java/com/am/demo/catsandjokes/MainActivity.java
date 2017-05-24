@@ -5,9 +5,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.Button;
 import android.widget.GridView;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.am.demo.catsandjokes.model.cats.Cat;
+import com.am.demo.catsandjokes.model.jokes.Joke;
 import com.am.demo.catsandjokes.retrofit.CatController;
 import com.am.demo.catsandjokes.retrofit.JokeController;
+
+import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -30,14 +35,32 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
-        setListeners();
         jokeController = new JokeController();
         catController = new CatController();
+        setListeners();
     }
 
     private void setListeners() {
+        jokeController.setOnJokeResponseListener(this::showJoke);
+        catController.setOnCatResponseListener(this::showCatsPicture);
         downloadCatsButton.setOnClickListener(v -> downloadCats());
         downloadJokeButton.setOnClickListener(v -> downloadJoke());
+    }
+
+    private void showCatsPicture(List<Cat> cats) {
+
+    }
+
+    private void showJoke(Joke joke) {
+        if (joke != null) {
+            showJokeTextView.setText(joke.getJoke());
+        } else {
+            showErrorInformation();
+        }
+    }
+
+    private void showErrorInformation() {
+        Toast.makeText(this, "Ups, something goes wrong...", Toast.LENGTH_SHORT).show();
     }
 
     private void downloadCats() {

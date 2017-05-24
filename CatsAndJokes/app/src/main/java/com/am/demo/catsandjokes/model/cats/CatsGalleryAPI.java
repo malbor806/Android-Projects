@@ -2,8 +2,6 @@ package com.am.demo.catsandjokes.model.cats;
 
 import retrofit2.Call;
 import retrofit2.http.GET;
-import retrofit2.http.Path;
-import retrofit2.http.Query;
 
 /**
  * Created by malbor806 on 24.05.2017.
