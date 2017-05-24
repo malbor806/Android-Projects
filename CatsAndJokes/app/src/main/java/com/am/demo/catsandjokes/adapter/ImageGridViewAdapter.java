@@ -61,7 +61,7 @@ public class ImageGridViewAdapter extends ArrayAdapter<Cat> {
         return holder;
     }
 
-    private synchronized void addPicture(int position, ImageHolder holder) {
+    private void addPicture(int position, ImageHolder holder) {
         Picasso.with(context)
                 .load(catsList.get(position).getUrl())
                 .fit()
