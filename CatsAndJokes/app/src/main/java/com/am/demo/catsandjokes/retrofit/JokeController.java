@@ -15,19 +15,19 @@ import retrofit2.Retrofit;
 
 public class JokeController implements Callback<JokeResponse> {
     private static final String KEY_INSTANCE = "JOKES";
-    private ChuckNorrisJokesAPI chuck;
+    private ChuckNorrisJokesAPI chuckNorrisJokesAPI;
     private OnJokeResponseListener onJokeResponseListener;
 
     public JokeController() {
-        RetrofitBuilder retrofitBuilder = RetrofitBuilder.getInstance(KEY_INSTANCE);
-        if (retrofitBuilder != null) {
-            Retrofit retrofit = retrofitBuilder.getRetrofit();
-            chuck = retrofit.create(ChuckNorrisJokesAPI.class);
+        RetrofitCreator retrofitCreator = RetrofitCreator.getInstance(KEY_INSTANCE);
+        if (retrofitCreator != null) {
+            Retrofit retrofit = retrofitCreator.getRetrofit();
+            chuckNorrisJokesAPI = retrofit.create(ChuckNorrisJokesAPI.class);
         }
     }
 
     public void getJokes() {
-        Call<JokeResponse> joke = chuck.getJoke();
+        Call<JokeResponse> joke = chuckNorrisJokesAPI.getJoke();
         joke.enqueue(this);
     }
 

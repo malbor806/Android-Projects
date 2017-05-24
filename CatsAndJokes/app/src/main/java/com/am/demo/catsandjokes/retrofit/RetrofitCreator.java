@@ -13,14 +13,14 @@ import retrofit2.converter.simplexml.SimpleXmlConverterFactory;
  * Created by malbor806 on 24.05.2017.
  */
 
-public class RetrofitBuilder {
+public class RetrofitCreator {
     private static final String JOKES_URL = "https://api.icndb.com/";
     private static final String CATS_URL = "http://thecatapi.com/api/";
-    private static RetrofitBuilder jokeInstance;
-    private static RetrofitBuilder catsInstance;
+    private static RetrofitCreator jokeInstance;
+    private static RetrofitCreator catsInstance;
     private Retrofit retrofit;
 
-    private RetrofitBuilder(String url) {
+    private RetrofitCreator(String url) {
         if (url.equals(JOKES_URL)) {
             createJokeRetrofit(url);
         } else {
@@ -28,7 +28,7 @@ public class RetrofitBuilder {
         }
     }
 
-    public static RetrofitBuilder getInstance(String instanceName) {
+    public static RetrofitCreator getInstance(String instanceName) {
         if (instanceName.equals("JOKES")) {
             return getJokesInstance(JOKES_URL);
         } else if (instanceName.equals("CATS")) {
@@ -37,16 +37,16 @@ public class RetrofitBuilder {
         return null;
     }
 
-    private static RetrofitBuilder getJokesInstance(String url) {
+    private static RetrofitCreator getJokesInstance(String url) {
         if (jokeInstance == null) {
-            jokeInstance = new RetrofitBuilder(url);
+            jokeInstance = new RetrofitCreator(url);
         }
         return jokeInstance;
     }
 
-    private static RetrofitBuilder getCatsInstance(String url) {
+    private static RetrofitCreator getCatsInstance(String url) {
         if (catsInstance == null) {
-            catsInstance = new RetrofitBuilder(url);
+            catsInstance = new RetrofitCreator(url);
         }
         return catsInstance;
     }

@@ -22,9 +22,9 @@ public class CatController implements Callback<CatsResponse> {
     private OnCatResponseListener onCatResponseListener;
 
     public CatController() {
-        RetrofitBuilder retrofitBuilder = RetrofitBuilder.getInstance(KEY_INSTANCE);
-        if (retrofitBuilder != null) {
-            Retrofit retrofit = retrofitBuilder.getRetrofit();
+        RetrofitCreator retrofitCreator = RetrofitCreator.getInstance(KEY_INSTANCE);
+        if (retrofitCreator != null) {
+            Retrofit retrofit = retrofitCreator.getRetrofit();
             cats = retrofit.create(CatsGalleryAPI.class);
         }
     }
