@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
+import android.widget.Toast;
 
 import com.am.demo.catsandjokes.R;
 import com.am.demo.catsandjokes.model.cats.Cat;
@@ -25,13 +26,13 @@ import java.util.List;
 public class ImageGridViewAdapter extends ArrayAdapter<Cat> {
     private Context context;
     private int layoutResourceId;
-    private List<Cat> data;
+    private List<Cat> catsList;
 
-    public ImageGridViewAdapter(Context context, int layoutResourceId, List<Cat> data) {
-        super(context, layoutResourceId, data);
+    public ImageGridViewAdapter(Context context, int layoutResourceId, List<Cat> catsList) {
+        super(context, layoutResourceId, catsList);
         this.layoutResourceId = layoutResourceId;
         this.context = context;
-        this.data = data;
+        this.catsList = catsList;
     }
 
     @NonNull
@@ -39,17 +40,14 @@ public class ImageGridViewAdapter extends ArrayAdapter<Cat> {
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         View row = convertView;
         ImageHolder holder = null;
-
         if (row == null) {
             LayoutInflater inflater = ((Activity) context).getLayoutInflater();
             row = inflater.inflate(layoutResourceId, parent, false);
-
             holder = createHolder(row);
             row.setTag(holder);
         } else {
             holder = (ImageHolder) row.getTag();
         }
-
         addPicture(position, holder);
         return row;
     }
@@ -65,7 +63,7 @@ public class ImageGridViewAdapter extends ArrayAdapter<Cat> {
 
     private synchronized void addPicture(int position, ImageHolder holder) {
         Picasso.with(context)
-                .load(data.get(position).getUrl())
+                .load(catsList.get(position).getUrl())
                 .fit()
                 .centerInside()
                 .into(holder.catPicture, new Callback() {
@@ -76,7 +74,7 @@ public class ImageGridViewAdapter extends ArrayAdapter<Cat> {
 
                     @Override
                     public void onError() {
-
+                        Toast.makeText(getContext(), R.string.error_while_downloading, Toast.LENGTH_SHORT).show();
                     }
                 });
     }

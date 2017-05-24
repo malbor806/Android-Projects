@@ -5,4 +5,5 @@
     <string name="sweet_cat">sweet cat</string>
     <string name="error_something_wrong">Ups, something goes wrong...</string>
     <string name="error_no_internet">No internet connection</string>
+    <string name="error_while_downloading">Error while downloading</string>
 </resources>

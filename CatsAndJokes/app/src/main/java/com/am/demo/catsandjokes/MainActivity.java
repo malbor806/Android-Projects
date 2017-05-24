@@ -5,6 +5,7 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.Html;
 import android.widget.Button;
 import android.widget.GridView;
 import android.widget.TextView;
@@ -62,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void showJoke(Joke joke) {
         if (joke != null) {
-            showJokeTextView.setText(joke.getJoke());
+            showJokeTextView.setText(Html.fromHtml(joke.getJoke()));
         } else {
             showErrorInformation(getString(R.string.error_something_wrong));
         }
