@@ -8,7 +8,8 @@
         android:id="@+id/iv_picture"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:contentDescription="@string/sweet_cat" />
+        android:contentDescription="@string/sweet_cat"
+        android:layout_margin="@dimen/iv_margin"/>
 
     <ProgressBar
         android:id="@+id/pb_progress"

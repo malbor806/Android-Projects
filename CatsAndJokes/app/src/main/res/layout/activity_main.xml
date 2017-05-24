@@ -60,7 +60,7 @@
             android:id="@+id/gv_catsList"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:numColumns="auto_fit"
+            android:numColumns="3"
             android:scrollbars="vertical" />
 
     </LinearLayout>

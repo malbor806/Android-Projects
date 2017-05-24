@@ -34,12 +34,14 @@ public class MainActivity extends AppCompatActivity {
     private JokeController jokeController;
     private CatController catController;
     private ImageGridViewAdapter imageGridViewAdapter;
+    private ConnectionUtil connectionUtil;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
+        connectionUtil = new ConnectionUtil(this);
         jokeController = new JokeController();
         catController = new CatController();
         setListeners();
@@ -73,15 +75,10 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(this, s, Toast.LENGTH_SHORT).show();
     }
 
-    public boolean isOnline() {
-        ConnectivityManager cm =
-                (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
-        NetworkInfo netInfo = cm.getActiveNetworkInfo();
-        return netInfo != null && netInfo.isConnectedOrConnecting();
-    }
+
 
     private void downloadCats() {
-        if (isOnline()) {
+        if (connectionUtil.isOnline()) {
             catController.getCats();
         } else {
             showErrorInformation(getString(R.string.error_no_internet));
@@ -89,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void downloadJoke() {
-        if (isOnline()) {
+        if (connectionUtil.isOnline()) {
             jokeController.getJokes();
         } else {
             showErrorInformation(getString(R.string.error_no_internet));
