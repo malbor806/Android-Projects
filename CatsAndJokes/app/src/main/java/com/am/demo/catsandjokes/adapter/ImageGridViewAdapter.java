@@ -64,8 +64,8 @@ public class ImageGridViewAdapter extends ArrayAdapter<Cat> {
     private void addPicture(int position, ImageHolder holder) {
         Picasso.with(context)
                 .load(catsList.get(position).getUrl())
-                .fit()
-                .centerInside()
+                .resize(250, 250)
+                .centerCrop()
                 .into(holder.catPicture, new Callback() {
                     @Override
                     public void onSuccess() {
