@@ -5,13 +5,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.Button;
 import android.widget.GridView;
 import android.widget.TextView;
-import com.am.demo.catsandjokes.model.ChuckNorrisJokesAPI;
-import com.am.demo.catsandjokes.model.Joke;
 
+import com.am.demo.catsandjokes.model.CatsGalleryAPI;
+import com.am.demo.catsandjokes.model.ChuckNorrisJokesAPI;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import retrofit2.Call;
 import retrofit2.Retrofit;
 
 public class MainActivity extends AppCompatActivity {
@@ -24,14 +23,16 @@ public class MainActivity extends AppCompatActivity {
     @BindView(R.id.gv_catsList)
     GridView catGalleryGridView;
     private Retrofit retrofit;
+    private Retrofit retrofit2;
     private ChuckNorrisJokesAPI chuck;
+    private CatsGalleryAPI cats;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
-        retrofit = new Retrofit.Builder().build();
         setListeners();
     }
 
@@ -44,7 +45,5 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void downloadJoke() {
-        chuck = retrofit.create(ChuckNorrisJokesAPI.class);
-        Call<Joke> joke = chuck.getJoke();
     }
 }
