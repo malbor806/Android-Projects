@@ -24,14 +24,12 @@ import java.util.List;
  */
 
 public class ImageGridViewAdapter extends ArrayAdapter<Cat> {
-    private Context context;
     private int layoutResourceId;
     private List<Cat> catsList;
 
     public ImageGridViewAdapter(Context context, int layoutResourceId, List<Cat> catsList) {
         super(context, layoutResourceId, catsList);
         this.layoutResourceId = layoutResourceId;
-        this.context = context;
         this.catsList = catsList;
     }
 
@@ -41,7 +39,7 @@ public class ImageGridViewAdapter extends ArrayAdapter<Cat> {
         View row = convertView;
         ImageHolder holder = null;
         if (row == null) {
-            LayoutInflater inflater = ((Activity) context).getLayoutInflater();
+            LayoutInflater inflater = ((Activity) parent.getContext()).getLayoutInflater();
             row = inflater.inflate(layoutResourceId, parent, false);
             holder = createHolder(row);
             row.setTag(holder);
@@ -62,7 +60,7 @@ public class ImageGridViewAdapter extends ArrayAdapter<Cat> {
     }
 
     private void addPicture(int position, ImageHolder holder) {
-        Picasso.with(context)
+        Picasso.with(holder.catPicture.getContext())
                 .load(catsList.get(position).getUrl())
                 .resize(250, 250)
                 .centerCrop()
