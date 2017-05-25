@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">TicTacToe</string>
+    <string name="you_play_as">Grasz jako</string>
+    <string name="your_move">Twój ruch!</string>
+    <string name="play_again">Zagraj ponownie</string>
+    <string name="you_play_as_token">Grasz jako %1$s</string>
+    <string name="game_finished_a_draw">Koniec gry. Mamy Remis</string>
+    <string name="game_finished_win_token">Koniec gry. Wygrały %1$s</string>
+    <string name="x_token">X</string>
+    <string name="o_token">O</string>
+    <string name="player_vs_computer">Player vs Computer</string>
+    <string name="player_vs_player">Player vs Player</string>
+</resources>
