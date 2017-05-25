@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Wisielec</string>
+    <string name="new_word">Nowe Słowo</string>
+    <string name="hangman">wisielec</string>
+    <string name="fails_counter">Pozostało prób: %1$s</string>
+    <string name="you_won">Brawo! :)</string>
+    <string name="you_lose">Przegrałeś :(</string>
+    <string-array name="words">
+        <item>ZALĄŻEK</item>
+        <item>KOKOSZKA</item>
+        <item>TRÓJKĄT</item>
+        <item>SZCZOTKA</item>
+        <item>KOMPUTER</item>
+        <item>CHOMIK</item>
+        <item>MYSZKA</item>
+        <item>KOŁOWROTEK</item>
+        <item>PĘDZIWIATR</item>
+        <item>KUKUŁKA</item>
+        <item>MĄKA</item>
+        <item>RZEŻUCHA</item>
+        <item>MOŹDZIERZ</item>
+        <item>FRAGMENTACJA</item>
+        <item>WEGETARIANIN</item>
+        <item>ORYGINALNY</item>
+        <item>DEMONIZOWAĆ</item>
+        <item>WZIĄĆ</item>
+        <item>MINERALIZACJA</item>
+        <item>LUMINESCENCJA</item>
+        <item>GŻEGŻÓŁKA</item>
+        <item>ŻÓŁĆ</item>
+        <item>JAPOŃSKI</item>
+        <item>SPÓŁGŁOSKA</item>
+        <item>PIĘTNOWAĆ</item>
+        <item>ACHILLES</item>
+        <item>ZDJĘCIE</item>
+        <item>KATAKUMBY</item>
+        <item>PRÓŻNOWAĆ</item>
+        <item>PLUSKAĆ</item>
+        <item>BĄBELEK</item>
+        <item>PODUSZKA</item>
+        <item>CYTRYNA</item>
+        <item>TRÓJMASZTOWIEC</item>
+        <item>HELIKOPTER</item>
+        <item>JABŁKO</item>
+        <item>OWIECZKA</item>
+        <item>WNUCZEK</item>
+    </string-array>
+</resources>
