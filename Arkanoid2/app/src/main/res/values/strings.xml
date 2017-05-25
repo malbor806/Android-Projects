@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Arkanoid2</string>
+    <string name="arkanoid">Arkanoid</string>
+    <string name="play">PLAY</string>
+    <string name="play_with_tap">PLAY WITH TAP</string>
+    <string name="play_with_shake">PLAY WITH SHAKE</string>
+</resources>
