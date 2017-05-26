@@ -1,6 +1,12 @@
 package com.am.demo.mapapp;
 
+import android.Manifest;
+import android.content.Context;
+import android.content.pm.PackageManager;
+import android.location.Location;
+import android.location.LocationManager;
 import android.os.Bundle;
+import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -25,8 +31,46 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     @Override
     public void onMapReady(GoogleMap googleMap) {
         this.googleMap = googleMap;
-        LatLng sydney = new LatLng(52, 52);
-        this.googleMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
-        this.googleMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+        findStartedLocation();
+    }
+
+    private void findStartedLocation() {
+        LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+        if (checkPermission()) return;
+        Location location = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
+        if (location != null) {
+            setUserLocationAsStartedLocation(location);
+        } else {
+            location = locationManager.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
+            setUserLocation(location.getLatitude(), location.getLongitude());
+        }
+    }
+
+    private boolean checkPermission() {
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            setDefaultLocation();
+            return true;
+        }
+        return false;
+    }
+
+    private void setUserLocationAsStartedLocation(Location location) {
+        double latitude = location.getLatitude();
+        double longitude = location.getLongitude();
+        setUserLocation(latitude, longitude);
+    }
+
+    private void setDefaultLocation() {
+        setLocation(52, 52);
+    }
+
+    private void setUserLocation(double latitude, double longitude) {
+        setLocation(latitude, longitude);
+    }
+
+    private void setLocation(double latitude, double longitude) {
+        LatLng newLocation = new LatLng(latitude, longitude);
+        this.googleMap.addMarker(new MarkerOptions().position(newLocation).title("Hop"));
+        this.googleMap.moveCamera(CameraUpdateFactory.newLatLng(newLocation));
     }
 }
