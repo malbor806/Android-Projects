@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Zadanie1</string>
+    <string name="what_number_does_computer_random">Jaką liczbę wylosował komputer?</string>
+    <string name="input_number">podaj liczbę</string>
+    <string name="check_if_number_is_correct">sprawdź</string>
+    <string name="attempts_counter">Liczba prób: 0</string>
+    <string name="random_again">Losuj ponownie</string>
+    <string name="too_small">Podana liczba jest za mała</string>
+    <string name="too_big">Podana liczba jest za duza</string>
+    <string name="correct_number">Brawo! Udało Ci się odgadnąć liczbę! :)</string>
+    <string name="attempts">Liczba prób: %1$d</string>
+</resources>
