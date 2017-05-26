@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Gallery</string>
+    <string-array name="descriptions">
+        <item>Mała myszka</item>
+        <item>Większa myszka</item>
+        <item>Myszka z misiem</item>
+        <item>A tu chomik na huśtawce</item>
+        <item>Myszka w filiżance</item>
+        <item>Myszka w serku</item>
+        <item>Hello darkness my old friend...</item>
+        <item>Ładny chomik</item>
+        <item>Pluszowa myszka</item>
+        <item>Muzykalny chomik</item>
+        <item>Chomik sportowiec</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
