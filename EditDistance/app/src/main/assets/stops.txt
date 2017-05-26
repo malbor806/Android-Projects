@@ -1,0 +1,923 @@
+﻿9 Maja
+Adamczewskich
+Adamieckiego
+Aleja Pracy
+Aleja Wędrowców
+Al. Piastów
+Arabska
+Arena
+Arkady (Capitol)
+Armii Krajowej
+Auchan
+Autostrada
+Azaliowa
+Bacciarellego
+Bagatela
+Bajana
+BAJANA - pętla
+Bałtycka
+BARDZKA
+BARDZKA (Cmentarz)
+BARTOSZOWICE
+Bąków
+Berenta
+Bezpieczna
+Białych Goździków
+BIELANY WROCŁAWSKIE
+Bielany - Kościół
+Bielany - Kwiatowa
+Bielany - MAKRO
+Bielany - PKP
+Bielany - PKS
+Bielany - skrzyżowanie
+Bielawa
+BIEŃKOWICE
+Bierdzany
+Bierutowska
+Bierutowska 75
+BIERUTOWSKA (Ośrodek zdrowia)
+Bierutowska - wiadukt
+Bierzyce
+Bierzyce - wieś
+Biestrzyków - skrzyżowanie
+Biskupice Podgórne Dong Seo/Dong Yang
+Biskupice Podgórne LG Chem
+Biskupice Podgórne LG Display
+Biskupice Podgórne LG Electronics
+Biskupice Podgórne LG Innotek
+BISKUPIN
+BLACHARSKA
+BLIZANOWICE
+Blizanowicka
+Bociania
+Bogusławice
+Bojanowska
+Borowa - skrzyżowanie
+Borowa - Stacja PKP
+Borowa - szkoła
+Borowska
+Borowska
+Braterska
+Brochowska
+BROCHÓW
+BROCHÓW (Stacja kolejowa)
+Brodnicka
+Brodzka
+Brodzka - łącznik
+Broniewskiego
+Brücknera
+Brzezia Łąka - cmentarz
+Brzezia Łąka - Główna
+Brzezia Łąka - Lipowa
+Brzezina
+BRZEZINA (pętla)
+Brzezina - Chrobrego
+Brzezina - Kościół
+Brzezina - Osiedle
+BRZEZINA - pętla
+Brzezinka Średzka
+Brzezinka Średzka - Główna
+Brzezińska
+Budziwojowice
+Buforowa
+Bujwida
+Bukowina
+Bukowina - skrzyżowanie
+Bukowskiego
+Byków
+Byków - Bar
+Byków - Lange
+Bystrzycka
+Bzowa
+Ceglana
+Centralna
+Centrostal
+CENTRUM HURTU UL. GIEŁDOWA
+Centrum Zarządzania Kryzysowego
+Chełmońskiego
+Chińska
+Chłodna
+Chłopska
+Chociebuska
+Chopina
+Chwałkowska
+C.H. Korona
+Ciechocińska
+Czajkowskiego
+Damrota
+Daszyńskiego
+Dawida
+Dąbrowica
+DH Astra
+Długa
+DŁUGA (Politechnika)
+Długołęka Nowy Urząd
+Długołęka - Kościół
+Długołęka - SELGROS
+Długołęka - skrzyżowanie
+Długołęka - Volvo
+Długołęka - Wrocławska
+Długosza
+Dmowskiego
+Dobroszów
+Dobroszycka
+Dokerska
+Dolmed
+Dolnobrzeska
+Dolnośląska Szkoła Wyższa
+DOMASZCZYN
+Domaszczyn - Dębowa
+Domaszczyn - sklep
+Domaszczyn - skrzyżowanie
+Domaszczyn - Trzebnicka
+Drukarska
+Drzewieckiego
+Dubois
+DWORCOWA
+Dworska
+DWORZEC AUTOBUSOWY
+DWORZEC GŁ. PKP
+DWORZEC NADODRZE
+DW. ŚWIEBODZKI
+Dyrekcyjna
+Działdowska
+Dzielna
+EPI
+Eureka
+Fadroma
+FAT
+Fiołkowa
+Forum Muzyki
+GAJ
+GAJ
+Gajowa
+Gajowicka
+Gajowicka (Gimnazjum nr 23)
+GAJ - pętla
+GALERIA DOMINIKAŃSKA
+Gałczyńskiego
+Gałowska
+GAŁÓW
+GAŁÓW (pętla)
+Gałów - ferma
+Gałów - PGR
+Gałów - Przedszkole
+Gazowa
+Gądowianka
+Gąsiorowskiego
+Gęsia
+Gimnazjum nr 23
+Glinianki
+Głogowska
+Główna
+Głubczycka
+Godebskiego
+Godzieszowa
+Godzieszowa - stajnia
+Gorlicka
+Gospodarska
+Góra Kapliczna
+Górnickiego
+Górnicza
+GRABISZYNEK
+Grabiszyńska
+GRABISZYŃSKA (Cmentarz)
+GRABISZYŃSKA (Cmentarz II)
+Grabowa
+Graniczna
+Graniczna (Strachowicka)
+Grawerska
+Groblice II-Kotowicka
+Groblice - Kolejowa
+Grochowa
+Gromadzka
+Grudziądzka
+Grunwaldzka
+Gwiaździsta
+Hala Orbita
+Hala Stulecia
+Hala Targowa
+HALLERA
+Hartmana
+Hermanowska
+Hippiczna
+Hotel Wrocław
+Hubska
+Husarska
+Hutmen
+Hutnicza
+Hynka
+Ibn Siny Avicenny
+Inflancka
+Inowrocławska
+Inżynierska
+Irysowa
+Iwiny (Rondo)
+Iwiny - Brochowska
+Iwiny - Kolejowa
+IWINY - pętla
+Iwiny - Polna
+Iwiny - Słoneczna
+Jabłeczna
+Jagodno
+JAKSONOWICE
+Janówek
+JANÓWEK (WOŚ)
+Januszkowice
+Januszkowice - Wierzbowa
+Jarnołtowska
+JARNOŁTÓW
+Jarocińska
+Jarzębinowa
+Jastrzębia
+Jaworowa
+Jedności Narodowej
+Jeleniogórska
+Jerzmanowo
+JERZMANOWO (Cmentarz I)
+JERZMANOWO (Cmentarz II)
+JERZMANOWO (Pętla)
+Jerzmanowska
+JERZMANOWSKA (Pętla)
+Jędrzejowska
+Joannitów
+Jordanowska
+Jutrosińska
+Jutrzenki
+Kadłubka
+Kajdasza
+Kamienna
+Kamiennogórska
+Kamieńskiego
+KAMIEŃSKIEGO (Pętla)
+Kamieńskiego szpital
+Kamień Brylantowa
+Kamień I
+Kamień II
+Kamień Jantarowa
+Karłowicza
+Karwińska
+Kasprowicza
+Katedra
+Kątna
+Kątowa
+Kąty Wilczyckie
+Kępa
+Kępa - Skrzyżowanie
+Kępińska
+Kętrzyńska
+Kiełczowska
+Kiełczowska (LZN)
+KIEŁCZOWSKA (LZN)
+Kiełczowska (cmentarz)
+KIEŁCZÓW
+Kiełczówek
+Kiełczówek - pętla
+Kiełczów Południowa
+Kiełczów Wschodnia
+Kiełczów - Brzozowa
+Kiełczów - Lipowa
+Kiełczów - Mleczna
+Kiełczów - osiedle
+Kiełczów - Rzeczna
+Kiełczów - Sielska Dolina
+Kiełczów - WODROL
+Kiełczów - Wrocławska
+KLECINA
+KLECINA (Stacja kolejowa)
+Kleczkowska
+Klimasa
+Kliniki
+KŁOKOCZYCE
+Kmieca
+Kobierzycka
+Kochanowskiego
+KOLBUSZOWSKA (Stadion)
+Kolejowa
+Kolista
+Kolista
+Kolonia Kiełczów
+Kołobrzeska
+Komandorska
+Kominiarska
+Kominiarska-plac sportowy
+Komuny Paryskiej
+Konduktorska
+Końcowa
+Kopańskiego
+Kopernika
+Kosmonautów (Nowe Żerniki)
+Kosmonautów (Szpital)
+Kossak-Szczuckiej
+Koszarowa
+KOSZAROWA (Szpital)
+KOSZAROWA (Uniwersytet)
+Kościelna
+Kościuszki
+Kośnego
+Kośnego1
+Kotowice II-Spacerowa/Leśna
+Kotowice - Cmentarna
+Kotowice - Główna
+Kotowice - Ogrodowa
+KOWALE
+Kowale (Stacja kolejowa)
+Kowalska
+Kowalska I
+KOWALSKA (Urząd Pocztowy)
+Kowieńska
+Kozanowska
+KOZANÓW
+KOZANÓW (Dokerska)
+Kozia
+Krajobrazowa
+Krakowiany
+Krakowska
+KRAKOWSKA (Centrum handlowe)
+Krasińskiego
+Krępice
+Krępicka
+Krępicka - szkoła
+KROMERA
+Królewiecka
+Królewska
+Krucza
+Krynicka
+Krzelowska
+Krzemieniecka
+KRZYKI
+KRZYŻANOWICE
+Księska
+KSIĘŻE MAŁE
+Księże Wielkie
+Kurpiów
+Kutrzeby
+KUŹNIKI
+KUŹNIKI (Stacja kolejowa)
+Kwiatkowskiego
+Kwiatkowskiego (Rondo)
+Kwidzyńska
+Kwiska
+Lamowice
+Las Mokrzański
+Las Osobowicki
+Las Ratyński
+Lekarska
+LEŚNICA
+Leśnica (stacja kolejowa)
+LEŚNICA - Hermes
+Libelta
+LIPA PIOTROWSKA
+Lipska
+LITEWSKA (Pętla)
+LITOMSKA (ZUS)
+Lubelska
+LUTYNIA
+Lutynia Osiedle
+Łosice
+Łososiowicka
+ŁOZINA
+Łozina - cmentarz
+Łozina - Milicka
+Łozina - Nowego Osiedla
+Łozina - Nowego Osiedla I
+Łozina - Nowego Osiedla II
+Łozina - Ośrodek zdrowia
+Łozina - Wrocławska
+Ługowa
+Łukaszowice
+Łużycka
+Malinowa
+Malwowa
+Małomicka
+Małopanewska
+Małopolska
+Marcepanowa
+Marchewkowa
+MARINO
+Marszowice
+Marszowicka
+Maślice Małe
+Maślicka
+Maślicka - Osiedle
+Metalowców
+METALOWCÓW (Ośrodek sportu)
+Michałowice
+Mickiewicza
+Mielecka
+Międzyrzecka
+Mikołowska
+Miłoszycka
+Miłoszyn
+MIŃSKA (Rondo Rotm. Pileckiego)
+Miodowa
+Mirków - stadion
+Mirków - Wolności
+Młodych Techników
+Mochnackiego
+Modra
+Mokra
+Mokronoska
+MOKRY DWÓR
+Mokrzańska
+Moniuszki
+Monopolowa
+Monte Cassino
+Morelowskiego
+Morwowa
+Mostostal
+mosty Mieszczańskie
+Mosty Warszawskie
+most Grunwaldzki
+Most Milenijny
+Most Muchoborski
+most Osobowicki
+Most Rakowiecki
+Mroźna
+MUCHOBÓR MAŁY (stacja kolejowa)
+Muchobór Wielki
+Muchobór Wielki (pętla)
+Mydlana
+Mydlice I
+Mydlice II
+Na Grobli
+Na Grobli 22
+Na Niskich Łąkach
+Na Ostatnim Groszu
+Na Szańcach
+Niedziałkowskiego
+Niedźwiedzia
+Norwida
+Nowodworska
+Nowowiejska
+Nowy Dom
+Nowy Dwór
+NOWY DWÓR (Pętla)
+Nowy Dwór (Rogowska)
+Nowy Dwór (Stacja kolejowa)
+Nyska
+NYSKA
+Obornicka (Obwodnica)
+Oboźna
+Odolanowska
+Odrodzenia Polski
+Ogród Botaniczny
+Ojca Beyzyma
+Okrzei
+Oleśniczka
+Oleśniczka - skrzyżowanie
+Olsztyńska
+Oławska
+Ołtaszyn
+OPATOWICE
+Opatowicka nr 127
+Opatowicka nr 69
+Opatowicka nr 85
+Opera
+OPORÓW
+Orla
+Orląt Lwowskich
+Orlińskiego
+Orzechowa
+OSIEDLE SOBIESKIEGO (Pętla)
+OSIEDLE SOBIESKIEGO (Pętla)
+OSOBOWICE
+OSOBOWICE (Stacja kolejowa)
+OSOBOWICKA (Cmentarz)
+OSOBOWICKA (Cmentarz II)
+Ossolineum
+Ostowa
+Ostrowskiego
+Os. Przyjaźni
+Owczarska
+Ozorzyce-Krasińskiego
+Ożynowa
+Palacha
+Paprotna
+Parafialna
+Park Brochowski
+PARK POŁUDNIOWY
+Park Stabłowicki
+Park Staromiejski
+Park Szczytnicki
+Park Tysiąclecia
+Park Wschodni
+Park Zachodni
+Partynice
+Partynicka
+Partyzantów
+Pasikurowice-cmentarz
+Pasikurowice-Energetyczna
+Pasikurowice-Malinowa
+Pasikurowice - n/ż
+Paulińska
+Pawłowice
+Pawłowice
+PAWŁOWICE (Widawska)
+Pawłowicka
+Pereca
+PETRUSEWICZA
+Piastowska
+PIECOWICE
+Pietrzykowice
+PILCZYCE
+Pilczycka (Anima)
+Piłsudskiego
+Piramowicza
+Pisarzowice
+Pisarzowice - Baza
+Pisarzowice - Graniczna
+Pisarzowice - Kolejowa
+Pisarzowice - Odrzańska
+Pisarzowice - Szkolna
+Pisarzowice - ul. Kolejowa
+Pisarzowice - Wrocławska
+Piwnika - Ponurego
+pl. Bema
+PL. DANIŁOWSKIEGO
+pl. Grunwaldzki
+PL. GRUNWALDZKI
+Pl. Hirszfelda
+PL. JANA PAWŁA II
+pl. Legionów
+pl. Nowy Targ
+pl. Orląt Lwowskich
+Pl. SOLIDARNOŚCI
+PL. STASZICA
+pl. Strzegomski (Muzeum Współczesne)
+pl. Wróblewskiego
+pl. Zgody
+Płońskiego
+Poczta Główna
+POCZTA POLSKA
+Podwale
+Pola
+POLANOWICE
+Polanowicka
+Poleska
+Politechnika Wrocławska
+Polkowicka
+Połabian
+Pomorska
+Popowice
+POPOWICE (Stacja kolejowa)
+Poprzeczna
+PORT LOTNICZY
+Poświęcka
+POŚWIĘCKA (Ośrodek zdrowia)
+POŚWIĘTNE
+Poznańska
+Północna
+PRACZE ODRZAŃSKIE
+PRACZE ODRZAŃSKIE (Stacja kolejowa)
+Pracze Widawskie
+Pretficza
+Prudnicka
+Prusa
+Pruszowice - las
+Pruszowice - wieś
+Przebiśniegowa
+Przedwiośnie (Stacja kolejowa)
+Przedwiośnie (Stacja kolejowa)
+Przybyły
+Przybyszewskiego
+Przyjaźni
+Przystankowa
+PSARY
+Psary - Parkowa
+Psary - Szkoła
+Psie Pole
+Psie Pole (Gorlicka)
+Psie Pole (Rondo)
+Psie Pole (Rondo)
+Psie Pole (Rondo)
+Psie Pole (stacja kolejowa)
+PSIE POLE (Stacja kolejowa)
+Psie Pole (Sycowska)
+Pułaskiego
+PUŁTUSKA
+Pustecka
+Racławicka
+Racławicka (Gimnazjum nr 23)
+RACŁAWICKA (pętla)
+Radio i Telewizja
+Radomierzyce
+Radwanice - Dębowa
+Radwanice - Mickiewicza
+Radwanice - Poprzeczna
+Radwanice - Skrajna
+Radwanice - szkoła
+Rakowiecka
+Raków
+Raków - skrzyżowanie
+Raków - zakład
+Ramiszów-kolonia
+RATYŃ
+Ratyń - skrzyżowanie
+Rdestowa
+Redycka
+Reja
+Renoma
+RĘDZIN
+RĘDZIŃSKA
+Rękodzielnicza
+Robotnicza (Cenrozłom)
+Robotnicza (Centrozłom)
+ROD Bajki
+ROD Bielany
+ROD Mieczyk
+ROD Oświata
+ROD Pod Dębem
+ROD Pod Morwami
+ROD Storczyk
+ROD Tysiąclecia
+ROD Zgoda
+ROD Źródło Zdrowia
+Rogowska
+Rondo
+Roweckiego
+Rozbrat
+Różanka
+Rubczaka
+RUBCZAKA (Stacja kolejowa)
+Rymarska
+Rynek
+Rysia
+Rzemieślnicza
+Samotworska
+SAMOTWÓR-PAŁAC
+Samotwór - Dębowa
+SAMOTWÓR - PAŁAC
+Sanocka
+Sąsiedzka
+Semaforowa
+Serbska
+SĘPOLNO
+Siechnice
+Siechnice - CPN
+Siechnice - CPN n ż
+Siechnice - Elektrociepłownia
+Siechnice - Gimnazjum
+Siechnice - ogrodnictwo
+Siechnice - Opolska
+SIECHNICE - OSIEDLE
+Siechnice - Staszica
+Siechnice - Szkolna
+SIECHNICE - TIM
+Siechnice - wiadukt
+Siechnice - Zacisze
+Siechnice - ZOZ
+Siedlec-skrzyżowanie
+Siedlec-szkoła
+Siostrzana
+Skała
+Skarbowców
+SKARBOWCÓW (Pętla)
+Skarżyńskiego
+Skierniewicka
+Skwerowa
+Słoneczna
+Słowiańska
+Smardzów
+SMARDZÓW (FERMA)
+Smardzów - Reja
+Smocza
+Solskiego
+SOŁTYSOWICE
+Sołtysowicka
+Sosnowiecka
+Sowia
+SPISKA (Ośrodek sportu)
+Spółdzielcza
+Stabłowice
+STABŁOWICKA (Ośrodek zdrowia)
+Stabłowicka (Szkoła Podstawowa nr 22)
+Stabłowicka (Szkoła Podstawowa nr 22)
+Stadion Olimpijski
+STADION WROCŁAW (Królewiecka)
+STADION WROCŁAW (Królewiecka)
+STADION WROCŁAW (Królewiecka)
+Stadion Wrocław (Lotnicza)
+Stadion Wrocław (Lotnicza)
+Stalowa
+Stanisławowska
+Stanki
+Starodębowa
+Starodworska
+STARODWORSKA (ZUW)
+Starogajowa
+Stępin
+STĘPIN - pętla
+Stoczniowa
+Strachowice
+Strachowice General Aviation
+Strachowicka
+Strachowskiego
+Strumykowa
+Strzegomska 56
+Sulimów
+Sułowska (Rondo)
+Suwalska
+Swobodna
+Swojczyce
+Swojczycka
+Szczecińska
+Szczepin
+SZCZODRE
+Szczodre - stawy
+Szczodre - Szkoła
+Szczodre - Trzebnicka
+Szewczenki
+Szkocka
+Szkolna
+Szkoła Żerniki
+Szp. Kolejowy
+Sztabowa
+Szybka
+Szybowcowa
+Szymanowskiego
+SZYMANÓW
+Szymanów - skrzyż.
+Ślazowa (pętla)
+Ślęza
+Ślęza (ul. Dębowa)
+Ślęza (ul. Przystankowa)
+Ślęza (ul. Pszenna - autostrada)
+Śliczna
+Śliwice
+Śliwowa
+Ślusarska
+Śniadeckich
+Śnieżna
+Średzka
+Śrubowa
+Świdnicka
+ŚWIDNICKA (Dom Europy)
+Świeradowska
+Świętokrzyska
+ŚWINIARY
+Świstackiego
+Świt
+Św. Katarzyna
+Św. Katarzyna1
+Św. Katarzyna
+Św. Katarzyna n.ż
+Św. Katarzyna - Główna
+Św. Katarzyna - Główna n ż
+Św. Katarzyna - Parkowa
+Św. Katarzyna - przedszkole
+Św. Katarzyna - skrzyżowanie
+ŚW. Katarzyna - stacja
+Św. Katarzyna - szkoła
+Św. Katarzyna - szpital
+Św. Katarzyna - Żernicka
+TARNOGAJ
+Tczewska
+Tokary
+Tokary - osiedle
+Topolowa
+Tramwajowa
+Transbud
+Trawowa
+Trestno
+TRESTNO (Pętla)
+Trzebnicka
+Trzmielowicka
+TRZMIELOWICKA (Stacja kolejowa)
+Tunelowa
+Turoszowska
+Twardogórska
+Tymiankowa
+Tyniecka
+Tyrmanda
+Uniwersytecka
+Uniwersytet
+Uniwersytet Ekonomiczny
+Uniwersytet Medyczny
+Unruga
+Urząd Wojewódzki
+Volvo
+Volvo - brama II
+Wallenroda
+WAŁBRZYSKA
+Warmińska
+Wawrzyniaka
+Weigla
+Wejherowska
+Wełniana
+Węglowa
+Węgrów
+Wiaduktowa
+Widawa
+Wiejska
+Wielka
+Wielkopolska
+Wilczyce
+Wilczyce - Dębowa
+Wilczyce - Sosnowa
+Wilczyce - stary młyn
+Wilczyce - Szkoła
+Wilczyce - Wilczycka
+Wilkszyn
+Wilkszyn (pętla)
+Wilkszyn - Graniczna
+Wilkszyn - Miłoszyn
+Wilkszyn - Polna
+Wilkszyńska
+Wiślańska
+Wiśniowa
+Wita Stwosza
+Witkowska
+Wojanowska
+WOJANOWSKA (pętla)
+WOJNÓW
+WOJNÓW (pętla)
+Wojszyce
+Wojszycka
+Wolska
+Wrocławski Park Przemysłowy
+Wrocławski Park Technologiczny
+Wrocław Brochów
+Wrocław Główny
+Wrocław Grabiszyn
+Wrocław Kuźniki
+Wrocław Leśnica
+Wrocław Mikołajów
+Wrocław Muchobór
+Wrocław Nadodrze
+Wrocław Nowy Dwór
+Wrocław Osobowice
+Wrocław Pawłowice
+Wrocław Popowice
+Wrocław Pracze
+Wrocław Psie Pole
+Wrocław Sołtysowice
+Wrocław Stadion
+Wrocław Świniary
+Wrocław Zachodni
+Wrocław Zakrzów
+Wrocław Żerniki
+Wrozamet
+Wschowska
+Wysoka
+Wysoka-Chabrowa
+Wysoka-Radosna
+Wysoka Osiedle
+Wyszyńskiego
+Wyścigowa
+Wyższa Szkoła Bankowa
+ZABRODZIE
+ZACHODNIA (Stacja kolejowa)
+Zacisze
+Zagłębiowska
+Zagłoby
+Zagony
+Zagrodnicza
+Zajazdowa
+Zajączkowska
+Zajezdnia BOREK
+Zajezdnia DĄBIE
+Zajezdnia GAJ
+Zajezdnia GĄDÓW
+Zajezdnia Grabiszyńska
+Zajezdnia IX
+Zajezdnia Obornicka
+Zajezdnia OŁBIN
+Zajezdnia VII
+Zakrzowska
+ZAKRZÓW
+Zalewowa
+Zamkowa
+Zaporoska
+Zaprężyn
+Zaprężyn - skrzyżowanie
+Zarembowicza
+ZAWALNA
+Zbożowa
+Zemska
+ZĘBICE - pętla
+Zębice - Prusa
+Zębice - skrzyżowanie
+Zębice - Trzech Lip/Prusa
+Zgorzelisko
+Zielińskiego
+Zielna
+Ziemniaczana
+Zimowa
+Złotnicka
+Złotniki
+Złotostocka
+ZOO
+Zwycięska
+ŻAR
+Żelazna
+Żernicka
+Żernicka (stacja kolejowa)
+Żerniki
+ŻERNIKI WROCŁAWSKIE
+Żerniki Wr. - Kolejowa
+Żerniki Wr. - Orla
+Żerniki Wr. - skrzyżowanie
+Żeromskiego
+Żmigrodzka (Obwodnica)
+Żmudzka

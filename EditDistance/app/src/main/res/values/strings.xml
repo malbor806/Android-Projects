@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">EditDistance</string>
+    <string name="find">Find word</string>
+    <string name="type_first_word">Type first word</string>
+    <string name="type_second_word">Type second word</string>
+    <string name="count_distance">Count distance</string>
+    <string name="distance_is_0">Distance is 0</string>
+    <string name="distance_is">Distance is %1$s</string>
+</resources>
