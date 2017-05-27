@@ -9,15 +9,18 @@ import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 
+import com.am.demo.mapapp.model.City;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.MarkerOptions;
+
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements OnMapReadyCallback {
     private GoogleMap googleMap;
+    private List<City> cities;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +29,8 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+        JSONConventer jsonConventer = new JSONConventer(getResources().openRawResource(R.raw.miasta));
+        cities = jsonConventer.getCitiesList();
     }
 
     @Override
@@ -38,11 +43,13 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
         if (checkPermission()) return;
         Location location = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
+        if (location == null) {
+            location = locationManager.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
+        }
         if (location != null) {
             setUserLocationAsStartedLocation(location);
         } else {
-            location = locationManager.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
-            setUserLocation(location.getLatitude(), location.getLongitude());
+            setDefaultLocation();
         }
     }
 
@@ -54,6 +61,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         return false;
     }
 
+
     private void setUserLocationAsStartedLocation(Location location) {
         double latitude = location.getLatitude();
         double longitude = location.getLongitude();
@@ -61,7 +69,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     }
 
     private void setDefaultLocation() {
-        setLocation(52, 52);
+        setLocation(51.110, 17.030);
     }
 
     private void setUserLocation(double latitude, double longitude) {
@@ -69,8 +77,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     }
 
     private void setLocation(double latitude, double longitude) {
-        LatLng newLocation = new LatLng(latitude, longitude);
-        this.googleMap.addMarker(new MarkerOptions().position(newLocation).title("Hop"));
-        this.googleMap.moveCamera(CameraUpdateFactory.newLatLng(newLocation));
+        googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(latitude, longitude), 9.0f));
     }
+
 }
