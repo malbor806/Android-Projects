@@ -30,6 +30,36 @@
     "longitude": "21.980"
   },
   {
+    "name": "Białystok",
+    "latitude": "53.139",
+    "longitude": "23.159"
+  },
+  {
+    "name": "Chełm",
+    "latitude": "51.139",
+    "longitude": "23.490"
+  },
+  {
+    "name": "Gniezno",
+    "latitude": "52.530",
+    "longitude": "17.610"
+  },
+  {
+    "name": "Jelenia Góra",
+    "latitude": "50.909",
+    "longitude": "15.729"
+  },
+  {
+    "name": "Kielce",
+    "latitude": "50.889",
+    "longitude": "20.649"
+  },
+  {
+    "name": "Olsztyn",
+    "latitude": "53.779",
+    "longitude": "20.489"
+  },
+  {
     "name": "Gdańsk",
     "latitude": "54.360",
     "longitude": "18.639"

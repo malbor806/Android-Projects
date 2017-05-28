@@ -45,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
     private PolylineOptions pathToDraw;
     private Polyline polyline;
     private MenuItem menuItem;
+    private double distance;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -77,6 +78,7 @@ public class MainActivity extends AppCompatActivity {
     private void addNewPath(MenuItem item) {
         setOtherMenuItemEnable(item, R.id.removeLines);
         pathToDraw = new PolylineOptions();
+        distance = 0;
     }
 
     private void removePath(MenuItem item) {
