@@ -22,10 +22,12 @@
                 android:dividerPadding="5dp"
                 android:orientation="horizontal">
 
-                <SearchView
+                <AutoCompleteTextView
+                    android:id="@+id/actv_searchCity"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="5" />
+                    android:layout_weight="5"
+                    android:hint="@string/choose_city" />
 
                 <ImageButton
                     android:layout_width="0dp"

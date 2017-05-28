@@ -8,6 +8,10 @@ import android.location.LocationManager;
 import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
 
 import com.am.demo.mapapp.model.City;
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -16,21 +20,56 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 
+import java.util.Arrays;
 import java.util.List;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 public class MainActivity extends AppCompatActivity implements OnMapReadyCallback {
+    @BindView(R.id.actv_searchCity)
+    AutoCompleteTextView searchCityAutoCompleteTextView;
     private GoogleMap googleMap;
     private List<City> cities;
+    private String[] citiesName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ButterKnife.bind(this);
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
         JSONConventer jsonConventer = new JSONConventer(getResources().openRawResource(R.raw.miasta));
         cities = jsonConventer.getCitiesList();
+        addSuggestionListToAutoCompleteTextView();
+        setListeners();
+    }
+
+    private void addSuggestionListToAutoCompleteTextView() {
+        if (cities != null) {
+            createCitiesNameArray();
+            ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, citiesName);
+            searchCityAutoCompleteTextView.setAdapter(adapter);
+            searchCityAutoCompleteTextView.setThreshold(1);
+        }
+    }
+
+    private void createCitiesNameArray() {
+        citiesName = new String[cities.size()];
+        for (int i = 0; i < cities.size(); i++) {
+            citiesName[i] = cities.get(i).getName();
+        }
+    }
+
+    private void setListeners() {
+        searchCityAutoCompleteTextView.setOnItemClickListener((parent, view, position, id) -> {
+            String name = (String) parent.getItemAtPosition(position);
+            int index = Arrays.asList(citiesName).indexOf(name);
+            City city = cities.get(index);
+            MainActivity.this.setLocation(city.getLatitude(), city.getLongitude());
+        });
     }
 
     @Override
@@ -77,7 +116,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     }
 
     private void setLocation(double latitude, double longitude) {
-        googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(latitude, longitude), 9.0f));
+        googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(latitude, longitude), 11.0f));
     }
 
 }
