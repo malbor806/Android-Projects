@@ -1,39 +1,37 @@
-{
-	"cities":[
-		{
-			"name" : "Wrocław",
-			"xcord" : "51.110",
-			"ycord" : "17.030"
-		},
-		{
-			"name" : "Warszawa",
-			"xcord" : "52.259",
-			"ycord" : "21.020"
-		},
-		{
-			"name" : "Zakopane",
-			"xcord" : "49.289",
-			"ycord" : "19.959"
-		},
-		{
-			"name" : "Szczecin",
-			"xcord" : "53.430",
-			"ycord" : "14.529"
-		},
-		{
-			"name" : "Rzeszów",
-			"xcord" : "50.049",
-			"ycord" : "21.999"
-		},
-		{
-			"name" : "Puławy",
-			"xcord" : "51.430",
-			"ycord" : "21.980"
-		},
-		{
-			"name" : "Gdańsk",
-			"xcord" : "54.360",
-			"ycord" : "18.639"
-		}
-	]
-}
+[
+  {
+    "name": "Wrocław",
+    "latitude": "51.110",
+    "longitude": "17.030"
+  },
+  {
+    "name": "Warszawa",
+    "latitude": "52.259",
+    "longitude": "21.020"
+  },
+  {
+    "name": "Zakopane",
+    "latitude": "49.289",
+    "longitude": "19.959"
+  },
+  {
+    "name": "Szczecin",
+    "latitude": "53.430",
+    "longitude": "14.529"
+  },
+  {
+    "name": "Rzeszów",
+    "latitude": "50.049",
+    "longitude": "21.999"
+  },
+  {
+    "name": "Puławy",
+    "latitude": "51.430",
+    "longitude": "21.980"
+  },
+  {
+    "name": "Gdańsk",
+    "latitude": "54.360",
+    "longitude": "18.639"
+  }
+]
