@@ -24,18 +24,11 @@
 
                 <AutoCompleteTextView
                     android:id="@+id/actv_searchCity"
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="5"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
                     android:hint="@string/choose_city" />
-
-                <ImageButton
-                    android:id="@+id/ib_drawLines"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:contentDescription="@string/draw_lines"
-                    android:src="@drawable/ic_create_black_24dp" />
 
             </LinearLayout>
         </android.support.v7.widget.Toolbar>

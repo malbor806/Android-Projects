@@ -2,4 +2,6 @@
     <string name="app_name">MapApp</string>
     <string name="choose_city">Choose city</string>
     <string name="draw_lines">Draw Lines</string>
+    <string name="remove_path">Remove path</string>
+    <string name="add_path">Add path</string>
 </resources>

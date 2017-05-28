@@ -8,9 +8,10 @@ import android.location.LocationManager;
 import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.view.MenuItem;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
-import android.widget.ImageButton;
 
 import com.am.demo.mapapp.model.City;
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -32,17 +33,18 @@ import butterknife.ButterKnife;
 public class MainActivity extends AppCompatActivity {
     @BindView(R.id.actv_searchCity)
     AutoCompleteTextView searchCityAutoCompleteTextView;
-    @BindView(R.id.ib_drawLines)
-    ImageButton drawTourImageButton;
+    @BindView(R.id.toolbar)
+    Toolbar toolbar;
     private static final double DEFAULT_LATITUDE = 51.110;
     private static final double DEFAULT_LONGITUDE = 17.030;
-    private static final float ZOOM = 11.0f;
+    private static final float ZOOM = 10.0f;
     private GoogleMap googleMap;
     private List<City> cities;
     private String[] citiesName;
     private boolean userWantToDrawPath;
     private PolylineOptions pathToDraw;
     private Polyline polyline;
+    private MenuItem menuItem;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,10 +52,42 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         userWantToDrawPath = false;
         ButterKnife.bind(this);
+        toolbar.inflateMenu(R.menu.menu);
+        toolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(MenuItem item) {
+                addOrRemovePath(item);
+                return true;
+            }
+        });
         setMapFragment();
         convertJsonFileToCitiesList();
         addSuggestionListToAutoCompleteTextView();
         setListeners();
+    }
+
+    private void addOrRemovePath(MenuItem item) {
+        if (item.getItemId() == R.id.drawLines) {
+            addNewPath(item);
+        } else {
+            removePath(item);
+        }
+    }
+
+    private void addNewPath(MenuItem item) {
+        setOtherMenuItemEnable(item, R.id.removeLines);
+        pathToDraw = new PolylineOptions();
+    }
+
+    private void removePath(MenuItem item) {
+        setOtherMenuItemEnable(item, R.id.drawLines);
+        removePathIfExist();
+    }
+
+    private void setOtherMenuItemEnable(MenuItem item, int drawLines) {
+        item.setEnabled(false);
+        menuItem = toolbar.getMenu().findItem(drawLines);
+        menuItem.setEnabled(true);
     }
 
     private void setMapFragment() {
@@ -68,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void setOnMapClickListener() {
         googleMap.setOnMapClickListener(latLng -> {
-            if (userWantToDrawPath) {
+            if (toolbar.getMenu().findItem(R.id.removeLines).isEnabled()) {
                 drawPath(latLng);
             }
         });
@@ -121,17 +155,6 @@ public class MainActivity extends AppCompatActivity {
             City city = cities.get(index);
             MainActivity.this.setLocation(city.getLatitude(), city.getLongitude());
         });
-        drawTourImageButton.setOnClickListener(v -> addOrRemovePath());
-    }
-
-    private void addOrRemovePath() {
-        if (userWantToDrawPath) {
-            userWantToDrawPath = false;
-            removePathIfExist();
-        } else {
-            pathToDraw = new PolylineOptions();
-            userWantToDrawPath = true;
-        }
     }
 
     private void findStartedLocation() {
