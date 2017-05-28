@@ -5,8 +5,6 @@ import com.am.demo.mapapp.model.City;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.json.simple.parser.JSONParser;
-import org.json.simple.parser.ParseException;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -35,18 +33,8 @@ public class JSONConventer {
     public JSONConventer(InputStream inputStream) {
         String jsonAsString = readJSONfromFile(inputStream);
         try {
-            readGsonFromString(jsonAsString);
             convertStringToJson(jsonAsString);
-        } catch (ParseException | JSONException e) {
-            e.printStackTrace();
-        }
-    }
-
-    private void readGsonFromString(String json) {
-        // Cities cities = new Gson().fromJson(json, Cities.class);
-        try {
-            convertStringToJson(json);
-        } catch (JSONException | ParseException e) {
+        } catch (JSONException e) {
             e.printStackTrace();
         }
     }
@@ -68,9 +56,8 @@ public class JSONConventer {
         return writer.toString();
     }
 
-    private void convertStringToJson(String jsonAsString) throws JSONException, ParseException {
-        JSONParser parser = new JSONParser();
-        jsonObject = new JSONObject(jsonAsString); // (JSONObject) parser.parse(jsonAsString);
+    private void convertStringToJson(String jsonAsString) throws JSONException {
+        jsonObject = new JSONObject(jsonAsString);
         citiesList = new ArrayList<>();
         convertJSONtoCityList();
     }
